@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{resume-template}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Charitarth Chugh}{}{ \urlstyle{same}\href{http://charitarth.codes}{charitarth.codes} |
+\href{mailto:charitarth.chugh@gmail.com}{charitarth.chugh@gmail.com} | 475.434.6427 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+
+\subsection{Trumbull High}
+\descript{GPA (Weighted): 3.73}
+\location{June 2021 | Trumbull, CT}
+\sectionsep{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Volunteering and Activities
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities}\label{sec:activities}
+
+\subsection{Hack Club}
+\descript{President: 2020 - 2021}
+\descript{Vice President: 2019 - 2020}
+\descript{Board: 2018 - 2019} 
+Explore, share, and learn\\ about
+new technologies, with \\
+an emphasis on programming\\
+and computer hardware.\\ Led and organized weekly meetings.
+\vspace{\topsep}
+\subsection{COLT}
+\descript{Secretary: 2019 - 2021}
+COLT is a foreign language\\ poetry competition in CT.\\ Helped in Hindi poetry and organizing meetings.
+\sectionsep{}
+
+\subsection{Volunteering}\label{subsec:volunteering}
+\descript{Time: 220+ hours}
+Volunteered at Trumbull \\
+Public Library for their\\
+Summer Reading Program
+\sectionsep{}
+
+
+\subsection{Tennis}
+\descript{Junior Varsity: 2019 - 2020}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}\label{sec:skills}
+
+\subsection{Programming}\label{subsec:programming}
+\location{Comfortable:}
+Java \textbullet{} Flutter \textbullet{} Git \textbullet{} GitHub\\
+NumPy \textbullet{} Pandas \textbullet{} Plotly\\
+Matplotlib \textbullet{} PyTorch \\
+\location{Familiar:}
+Linux \textbullet{} Shell \textbullet{}  \LaTeX{} \textbullet{} Kotlin\\
+Docker \textbullet{}  HTML \textbullet{}  CSS
+\sectionsep{}
+
+\subsection{Languages}
+%\location{Languages :} 
+English \textbullet{} Hindi (Speaker)\\ 
+`Spanish (Basic) 
+%\location{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}\label{sec:links}
+GitHub:// \href{https://github.com/charitarthchugh}{\textbf {charitarthchugh}} \\
+Linkedin:// \href{https:///www.linkedin.com/in/charitarth}{\textbf {charitrth}} \\
+JovianAI:// \href{https://jovian.ai/charitarthchugh}{\textbf{charitarthchugh}}\\
+Kaggle:// \href{https://kaggle.com/charitarth}{\textbf{charitarth}}\\
+Medium:// \href{https://medium.com/@charitarth.chugh}{\textbf{@charitarth.chugh}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}\label{sec:projects}
+\runsubsection{Solar India}
+\descript{| Data Analysis}
+\location{December 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item In-depth analysis of solar energy generation and sensor data from a solar plant in India, using Pandas, Numpy, Seaborn, and Matplotlib.
+\item Identified inefficeincies at the plant, such as poorly functioning hardware.  
+\end{tightemize}
+
+\runsubsection{Pulsar Idenfication}
+\descript{| Machine Learning}
+\location{June 2020}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created a 97\% accurate classifier using a custom Logistic Regression model made with Numpy, Pandas, and PyTorch for the classification of pulsars in the HTRU1 dataset
+%\item Used Numpy, Pandas, and PyTorch to create a custom Logistic Regression model. 
+\end{tightemize}
+%\sectionsep
+
+\runsubsection{Portfolio Showcase}
+\descript{| Frontend}
+\location{2020}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and developed a responsive website using Flutter SDK
+\item Implemented Firebase Flutter integration and used the VelocityX framework for Flutter
+\end{tightemize}
+%\sectionsep
+
+
+%\sectionsep
+\sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Research}\label{sec:research}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Researcher}
+%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+%\sectionsep
+
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Cetifications and Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications and Awards}
+
+\runsubsection{Zero To GANs}
+\descript{|  Certification}
+\location{ July 2020}
+\begin{tightemize}
+\item Given for successful completion of "Deep Learning with Pytorch: Zero to GANs",
+             a six-week online course offered in collaboration by FreeCodeCamp and JovianAI.
+\item Represents about 60 hours of coursework, which required doing weekly assignments, watching lectures, and a course project
+\item Gained fundamental math skills that are utilized in machine learning. 
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{Zero To Pandas}
+\descript{|  Certification}
+\location{ October 2020}
+\begin{tightemize}
+\item Given for successful completion of "Data Analysis with Python: Zero to Pandas", 
+            a six-week online course offered in collaboration by FreeCodeCamp and JovianAI.
+\item Represents about 60 hours of coursework, which required doing weekly assignments, watching lectures, and a course project.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{THS Golden Eagle}
+\descript{|  Award}
+\location{ June 2019 \& June 2020 }
+\begin{tightemize}
+\item Given to Trumbull High students who have volunteered more than 100 hours in a year.
+\item Awarded 2 times.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{\href{https://codein.withgoogle.com}{Google Code In}}
+\descript{|  Participation}
+\location{ December 2019 - January 2020 }
+\begin{tightemize}
+\item This was a coding competition hosted by Google that introduced pre-university students to open source software development
+\end{tightemize}
+\sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
