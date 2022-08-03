@@ -30,7 +30,7 @@
 
 % Date command
 \usepackage[absolute]{textpos}
-\usepackage[UKenglish]{isodate}
+\RequirePackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
@@ -42,8 +42,8 @@ Last Updated on \today
 \newcommand{\namesection}[3]{
 \centering{
 \fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
-\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 
+\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}
